@@ -1,0 +1,55 @@
+<header class="fixed top-0 z-50 w-full bg-brandcolorblue text-white border-b border-white/20">
+  <div class="w-full flex items-center justify-between px-4 py-2 lg:px-6">
+    <!-- Left: Navigation -->
+    <nav aria-label="Main navigation">
+      <ul class="flex items-center space-x-2 text-sm font-semibold text-white">
+        <!-- Home Icon -->
+        <li>
+          <a
+            href="{{ site.url }}"
+            class="flex items-center space-x-1 hover:underline"
+            aria-label="Home"
+          >
+            <svg
+              class="h-4 w-4 text-white/80"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+            <!-- <span>Home</span> -->
+          </a>
+        </li>
+
+        <!-- Countries -->
+        <li>
+          <a href="{{ site.url }}{{ site.baseurl }}" class="hover:underline">Countries</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Right: Brand Logo -->
+    <a
+      href="{{ site.url }}"
+      class="flex items-center space-x-2 no-underline hover:opacity-90"
+      aria-label="Trilp AI"
+    >
+      <span class="text-sm font-semibold">Trilp AI</span>
+      <img
+        src="https://www.trilp.in/assets/img/trilp-ai-logo.png"
+        alt="Trilp AI logo"
+        class="h-6 w-6"
+        loading="lazy"
+        width="24"
+        height="24"
+      />
+    </a>
+  </div>
+</header>

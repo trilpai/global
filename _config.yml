@@ -1,0 +1,31 @@
+title: Global Tech Guide for Indian Developers
+description: Opportunities abroad for young Indian software developers
+author: Pradyumna Das Roy
+
+# GitHub Pages Custom Domain
+# url: 'https://www.trilp.in'
+# baseurl: '/countries' # GitHub repo name
+
+# Markdown + Theme
+markdown: kramdown
+theme: minima
+
+# Custom flags
+use_cdn_tailwind: false # Set to true if using Tailwind CDN in head.html
+
+# Collections
+collections:
+  remotejobs:
+    output: true
+    permalink: /:collection/:name/
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: ''
+      type: remotejobs
+    values:
+      layout: country
+      author: Pradyumna Das Roy # fallback for author
+      image: /assets/img/trilp-ai-1200x628.png # fallback OG image
+      description: 'Explore career opportunities for Indian software developers abroad'

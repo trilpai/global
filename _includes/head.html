@@ -1,0 +1,133 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Primary Meta Tags -->
+  <title>
+    {{ page.title | default: site.title | append: ' - Trilp AI Remote Jobs' | xml_escape }}
+  </title>
+  <meta
+    name="description"
+    content="{{ page.description | default: site.description | xml_escape }}"
+  />
+  <meta
+    name="keywords"
+    content="{{ page.keywords | default: 'Tech Jobs Abroad, Remote Jobs, International Jobs, International Remote Jobs' }}"
+  />
+  <meta
+    name="author"
+    content="{{ page.author | default: site.author | default: 'Pradyumna Das Roy' | xml_escape }}"
+  />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+
+  <!-- Favicons & App Icons -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="https://www.trilp.in/assets/img/favicons/favicon.svg"
+  />
+  <link rel="shortcut icon" href="https://www.trilp.in/assets/img/favicons/favicon.ico" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="https://www.trilp.in/assets/img/favicons/apple-touch-icon.png"
+  />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta
+    property="og:title"
+    content="{{ page.title | default: site.title | append: ' - Trilp AI Remote Jobs' | xml_escape }}"
+  />
+  <meta
+    property="og:description"
+    content="{{ page.description | default: site.description | xml_escape }}"
+  />
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+  <meta
+    property="og:image"
+    content="{{ page.image | relative_url | default: 'https://www.trilp.in/assets/img/trilp-ai-1200x628.png' }}"
+  />
+  <meta property="og:site_name" content="Trilp AI" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="{{ page.title | default: site.title | append: ' - Trilp AI Remote Jobs' | xml_escape }}"
+  />
+  <meta
+    name="twitter:description"
+    content="{{ page.description | default: site.description | xml_escape }}"
+  />
+  <meta
+    name="twitter:image"
+    content="{{ page.image | relative_url | default: 'https://www.trilp.in/assets/img/trilp-ai-1200x628.png' }}"
+  />
+  <meta name="twitter:site" content="@trilpai" />
+
+  <!-- Structured Data: Article -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ page.title | default: site.title | append: ' - Trilp AI Remote Jobs' | xml_escape }}",
+      "description": "{{ page.description | default: site.description | xml_escape }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ page.author | default: site.author | default: 'Pradyumna Das Roy' | xml_escape }}"
+      },
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ page.image | relative_url | default: 'https://www.trilp.in/assets/img/trilp-ai-1200x628.png' }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Trilp AI",
+        "alternateName": "Trilp",
+        "url": "https://www.trilp.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.trilp.in/assets/img/trilp-ai-logo.png"
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://www.trilp.in/assets/css/font/inter.css" />
+
+  <!-- Tailwind CSS -->
+  {% if site.use_cdn_tailwind == true %}
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandcolorblue: '#002B5B',
+            brandcolorred: '#D72638',
+            brandcolorlightblue: '#4F9DF7',
+            brandcolorlightred: '#FF4C4C',
+          },
+          fontFamily: {
+            sans: ['InterVariable', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  {% else %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+  {% endif %}
+</head>

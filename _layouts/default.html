@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  {% include head.html %}
+  <body class="bg-white text-black font-sans antialiased">
+    <!-- Header -->
+    {% include header.html %}
+
+    <!-- Main Content Area -->
+    <main id="main" role="main">
+      <section
+        id="maincontent"
+        class="flex flex-col items-center justify-center min-h-[94svh] pt-16 px-4"
+      >
+        <div class="w-full max-w-4xl mx-auto">{{ content }}</div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    {% include footer.html %}
+  </body>
+</html>

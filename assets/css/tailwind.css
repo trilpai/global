@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brandcolorblue: #002b5b;
+  --color-brandcolorred: #d72638;
+  --color-brandcolorlightblue: #4f9df7;
+  --color-brandcolorlightred: #ff4c4c;
+  --font-sans: 'InterVariable', sans-serif;
+}
+
+@layer components {
+  .country-article {
+    @apply text-base leading-relaxed text-gray-800;
+  }
+
+  .country-article h2 {
+    @apply text-2xl font-bold text-brandcolorblue mt-12 mb-4 border-b border-gray-200 pb-1;
+  }
+
+  .country-article h3 {
+    @apply text-xl font-semibold text-brandcolorblue mt-6 mb-2;
+  }
+
+  .country-article p {
+    @apply mb-4;
+  }
+
+  .country-article ul {
+    @apply list-disc pl-5 space-y-1;
+  }
+
+  .country-article li::marker {
+    color: theme('colors.brandcolorred');
+  }
+
+  .country-article a {
+    @apply text-brandcolorblue underline hover:text-brandcolorred;
+  }
+
+  .country-article hr {
+    @apply my-10 border-gray-300;
+  }
+
+  .country-article table {
+    @apply w-full border border-gray-300 text-sm my-4 table-auto;
+  }
+
+  .country-article thead {
+    @apply bg-gray-100 font-semibold;
+  }
+
+  .country-article th,
+  .country-article td {
+    @apply border border-gray-200 px-4 py-2 text-left align-top;
+  }
+
+  .country-article tbody tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
+}

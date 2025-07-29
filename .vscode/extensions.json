@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "editorconfig.editorconf",
+    "ginfuru.vscode-jekyll-snippets",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "yzhang.markdown-all-in-one",
+    "christian-kohler.path-intellisense",
+    "neilding.language-liquid",
+    "naumovs.color-highlight",
+    "pkief.material-icon-theme"
+  ],
+  "unwantedRecommendations": [
+    "ritwickdey.LiveServer",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint"
+  ]
+}
+

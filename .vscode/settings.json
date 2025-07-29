@@ -1,0 +1,26 @@
+{
+  // ✅ Use Prettier for formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // ✅ Respect .editorconfig rules
+  "editor.detectIndentation": false,
+
+  // ✅ Tailwind CSS class sorting + linting (if added later)
+  "tailwindCSS.experimental.classRegex": [
+    "class\\s*[:=]\\s*['\"]([^'\"]*)['\"]", // JS/TS style
+    "class:\\s*['\"]([^'\"]*)['\"]"         // YAML-style or embedded
+  ],
+
+  // ✅ Markdown tweaks
+  "markdownlint.config": {
+    "default": true,
+    "MD013": false // Don't force hard line length
+  },
+
+  // ✅ Icon theme
+  "workbench.iconTheme": "material-icon-theme",
+
+  // ✅ Keep terminal neat
+  "terminal.integrated.inheritEnv": true
+}
