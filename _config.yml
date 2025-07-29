@@ -1,5 +1,5 @@
-title: Global Tech Guide for Indian Developers
-description: Opportunities abroad for young Indian software developers
+title: Global Remote Jobs
+description: Global remote and onsite jobs for young Indian software developers, AI and Data science engineers.
 author: Pradyumna Das Roy
 
 # GitHub Pages Custom Domain
@@ -28,4 +28,4 @@ defaults:
       layout: country
       author: Pradyumna Das Roy # fallback for author
       image: /assets/img/trilp-ai-1200x628.png # fallback OG image
-      description: 'Explore career opportunities for Indian software developers abroad'
+      description: 'Global remote and onsite jobs for young Indian software developers, AI and Data science engineers.'
